@@ -1,0 +1,4 @@
+name = "cloudflare-pages-deployments-api-proxy"
+type = "webpack"
+account_id = "12312470fjlasdfjl450930sdlfklj"
+workers_dev = true
