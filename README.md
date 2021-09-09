@@ -16,6 +16,8 @@ It is also possible to configure the associated domain via wrangler or the `wran
 
 ## License
 
-### MIT
+[MIT](https://github.com/estallio/cloudflare-pages-deployments-api-proxy/blob/main/LICENSE)
 
-> Github [@estallio](https://github.com/estallio) &nbsp;
+## Contact
+:octocat: [@estallio](https://github.com/estallio)\
+:email: [leonhard.esterbauer@gmal.com](mailto:leonhard.esterbauer@gmail.com)
