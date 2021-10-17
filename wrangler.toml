@@ -1,4 +1,7 @@
 name = "cloudflare-pages-deployments-api-proxy"
 type = "webpack"
-account_id = "12312470fjlasdfjl450930sdlfklj"
+account_id = ""
 workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2021-10-16"
