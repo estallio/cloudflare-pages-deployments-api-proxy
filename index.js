@@ -16,7 +16,7 @@ const API_URL = 'https://api.cloudflare.com'
 // - https://api.cloudflare.com/client/v4/accounts - to get the account id from email and api-key
 // If we assume the incoming URL can have some subdomain or subpath before, we check if the end of the paths matches the following regular expression:
 const allowedPathsRegex = new RegExp(
-    /\/client\/v4\/accounts(\/[A-Za-z0-9_.-]+\/pages\/projects\/[A-Za-z0-9_.-]+\/deployments(\/projects\/[A-Za-z0-9_.-]+)?)?$/
+    /\/cf-api\/client\/v4\/accounts(\/[A-Za-z0-9_.-]+\/pages\/projects\/[A-Za-z0-9_.-]+\/deployments(\/projects\/[A-Za-z0-9_.-]+)?)?$/
 )
 
 function handleOptions(request) {
