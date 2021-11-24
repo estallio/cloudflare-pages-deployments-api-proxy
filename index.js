@@ -12,11 +12,11 @@ const API_URL = 'https://api.cloudflare.com'
 //    or someone is able to inject proper code into the sanity studio
 //    this has no effect if credentials are leaked as one could simply use e.g. postman or some self written code to do the requests
 // according to this, following urls are fine:
-// - https://api.cloudflare.com/api/v4/accounts/sfjhfof8u79s7df/pages/projects/some-project/deployments... - for deployment manipulation
-// - https://api.cloudflare.com/api/v4/accounts - to get the account id from email and api-key
+// - https://api.cloudflare.com/client/v4/accounts/sfjhfof8u79s7df/pages/projects/some-project/deployments... - for deployment manipulation
+// - https://api.cloudflare.com/client/v4/accounts - to get the account id from email and api-key
 // If we assume the incoming URL can have some subdomain or subpath before, we check if the end of the paths matches the following regular expression:
 const allowedPathsRegex = new RegExp(
-    /\/api\/v4\/accounts(\/[A-Za-z0-9_.-]+\/pages\/projects\/[A-Za-z0-9_.-]+\/deployments(\/projects\/[A-Za-z0-9_.-]+)?)?$/
+    /\/client\/v4\/accounts(\/[A-Za-z0-9_.-]+\/pages\/projects\/[A-Za-z0-9_.-]+\/deployments(\/projects\/[A-Za-z0-9_.-]+)?)?$/
 )
 
 function handleOptions(request) {
